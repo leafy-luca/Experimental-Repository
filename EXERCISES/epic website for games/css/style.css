@@ -1,0 +1,71 @@
+
+
+
+    body{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+img, footer, section{float: left;}
+
+footer, section{border-width: 4px;
+                border-style: groove;
+                border-color: #00000024;
+                background-color: #dedede;
+                width: 99.57%;
+                padding: 1em;}
+
+        .wheader{
+            border-width: 4px;
+            border-style: groove;
+            border-color: #00000024;
+            background-color: #dedede;
+            padding: 3em;
+            margin: auto;
+            font-weight: bold;}
+
+
+        #logo{margin: -3.5em;
+              height: 100px;
+              float: left;
+              padding: 0.5em;
+              padding-left: 1.5em;}
+                        
+        nav{margin: -2em;
+            float: right;}
+
+
+    @keyframes wowzie{
+        from{color:#000; font-size: small;}
+        to{color: red; font-size: large;}
+
+    }
+        #muchwow{animation-name: wowzie;
+                 animation-duration: 1s;
+                 animation-direction: alternate;
+                 animation-iteration-count: infinite;
+                }
+
+                section, footer {clear:both;}
+    
+    .gsections{float: left;
+               border-width: 4px;
+               border-style: groove;
+               border-color: #00000024;
+               background-color: #dedede;
+               padding: 3em;
+               margin: auto; 
+               width: 93.7%;}
+
+    details{display: inline;
+            text-align: center;
+            border-width: 4px;
+            border-style: solid;
+            border-color: #00000024;}
+
+    summary{margin: 2em;}
+
+    details img{float: none;
+                text-align: center;
+                clear: both;
+                margin: 2em;
+                height: 450px;}
+
+    article{margin-left: 8em; margin-right: 8em; margin-bottom: 4em;}
