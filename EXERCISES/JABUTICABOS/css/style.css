@@ -1,0 +1,218 @@
+
+
+/* General Styles */
+
+*{ font-family:Arial, Helvetica, sans-serif; }
+img {
+    width: 250px;
+  }
+  
+  #logo {
+    width: 100px !important;
+  }
+  
+  .flexCont {
+    display: flex;
+    border-top: 1px solid; /* Added shorthand for border-style */
+    border-right: 1px solid;
+    border-left: 1px solid;
+    flex-direction: row;
+  }
+  
+  /* Header Specific */
+  .US header {
+    display: flex;
+    justify-content: space-between; /* Ensures space between logo and nav */
+    align-items: center; /* Vertically center-aligns children */
+    width: 100%; /* Ensures header takes full width */
+    background-color: #e1e1e1;
+  }
+  
+  .US nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 1em;
+  }
+  
+  .US nav li {
+    margin-right: 20px; /* Spacing between menu items */
+  }
+  
+  .US nav li:last-child {
+    margin-right: 0; /* No margin on the last item */
+  }
+  
+        /* Breadcrumbs */
+        div.BC ul {
+          display: flex; /* Ensures items are in line */
+        }
+        
+        div.BC li {
+          list-style: none;
+          font-size: 18px;
+        }
+        
+        div.BC li + li:before {
+          padding: 8px;
+          color: black;
+          content: "/\00a0";
+        }
+
+  /* Sidebar */
+  div.SB {
+    display: flex;
+    padding: 1em;
+    margin-right: 1em;
+    width: 500px;
+    flex-direction: column;
+    align-items: center; /* Center aligns the child elements */
+    text-align: center; /* Centers text for any text child elements */
+    background-color: #e1e1e1;
+    max-width: 250px;
+  }
+  
+  div.SB img { 
+    width: 100%; /* Adjust as necessary to fit the sidebar */
+    max-width: 100%; /* Ensures image does not overflow the sidebar */
+  }
+  
+  div.SB p {
+    text-align: center; /* Ensures the text in paragraphs is centered */
+  }
+
+  div.SB h5 { font-size: 15px; }
+
+            /* Content */
+
+            div.CONTENT {
+              padding: 2em;
+              display: flex; /* Ensures flex properties apply */
+              flex-direction: column; /* Stack children vertically */
+              float: left;
+            }
+            
+            div.CONTENT span {
+              font-size: 20px;
+              clear: left;
+              float: right; /* Aligns the span to the right */
+              margin-left: 20px; /* Adds space between the text and the span */
+              width: auto; /* Adjust width as needed or keep it auto */
+              font-style: italic;
+            }
+            
+            div.CONTENT article {
+              width: 100%; /* Ensures the article uses the full width */
+              float: right;
+            }
+
+            div.CONTENT img{
+              float: left;
+              padding-right: 2em;
+            }
+            
+            div.CONTENT p{
+              margin-left: 10px;
+            }
+
+            div.CONTENT header{
+              text-align: center;
+              align-items: center;
+            }
+
+            section{
+              display: flex;
+              flex-direction: column;
+              margin-top: 25px;
+            }
+
+            thead{ background-color: #e1e1e1; }
+            table{ border: 2px solid;}
+
+
+
+/* Footer */
+
+footer.FT{
+  display: flex;
+  border-bottom: 1px solid;
+  background-color: #e1e1e1;
+  padding: 1em;
+}
+
+footer.FT p{
+  padding-right: 5px;
+}
+
+
+            /* CONTENT ALBUNS */
+
+            div.CONTENTA {
+              width: 100%;
+              padding: 2em;
+              display: flex; /* Ensures flex properties apply */
+              flex-direction: column; /* Stack children vertically */
+              align-items: center;
+            }
+
+            section#alb{
+              flex-direction: row;
+              justify-content: space-around;
+            }
+
+            div.ALBUM{
+              border: 1px solid;
+              background-color: #e1e1e1;
+              padding: 1em;
+              margin: 2em;
+              align-items: center;
+              text-align: center;
+            }
+
+            div.aPage{
+              display: flex;
+              flex-direction: column;
+              float: left;
+            }
+            
+            div.aPage header{
+              align-items: center;
+              text-align: center;
+            }
+
+            div.aPageText{
+              display: flex;
+              flex-direction: row;
+            }
+
+            div.aPageText img{
+              float: left;
+              width: 250px;
+              margin-right: 2em;
+              margin-left: 2em;
+            }
+
+            div.aPageText p{
+              float: right;
+              padding-right: 2em;
+            }
+
+            div.aPagePlayer{
+              text-align: center;
+              justify-content: center;
+              margin: 2em;
+              padding: 1em;
+              border: 1px solid;
+              background-color: #e1e1e1;
+            }
+
+            a:hover{
+              font-style: bold;
+              color: #191919;
+            }
+
+            a:visited{
+              text-decoration: none !important;
+              color: black !important;
+            }
